@@ -267,9 +267,12 @@ const ChatUI = () => {
       
       // 添加当前 AI 的消息
       setMessages(prev => [...prev, aiMessage]);
-
+      let uri = "/api/chat";
+      if (selectedGroupAiCharacters[i].rag == true) {
+        uri = "/rag/query";
+      }
       try {
-        const response = await request(`/api/chat`, {
+        const response = await request(uri, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -277,6 +280,7 @@ const ChatUI = () => {
           body: JSON.stringify({
             model: selectedGroupAiCharacters[i].model,
             message: inputMessage,
+            query: inputMessage,
             personality: selectedGroupAiCharacters[i].personality,
             history: messageHistory,
             index: i,

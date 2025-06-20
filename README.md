@@ -27,9 +27,9 @@
 1. [Fork本项目](https://github.com/maojindao55/botgroup.chat/fork)到你的 GitHub 账号
 
 2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)
-   - 进入  Workers & Pages 页面
-   - 点击 "Create a application > Pages" 按钮
-   - 选择 "Connect to Git"
+   - 进入Workers > Workers & Pages 页面
+   - 点击 "创建" 按钮
+   - 选择 "Pages">"Connect to Git"
 
 3. 配置部署选项
    - 选择你 fork 的仓库
@@ -141,6 +141,7 @@ APIKEY|对应角色|服务商|申请地址|
 ## 贡献指南
 
 欢迎提交 Pull Request 或提出 Issue。
+加官方微信：`botgroup` 拉你进微信群
 当然也可以加共建QQ群交流：922322461（群号）
 
 ## 跪谢赞助商ORZ
