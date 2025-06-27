@@ -286,6 +286,7 @@ const ChatUI = () => {
             index: i,
             aiName: selectedGroupAiCharacters[i].name,
             rag: selectedGroupAiCharacters[i].rag,
+            knowledge: selectedGroupAiCharacters[i].knowledge,
             custom_prompt: selectedGroupAiCharacters[i].custom_prompt.replace('#groupName#', group.name) + "\n" + group.description
           }),
         });
